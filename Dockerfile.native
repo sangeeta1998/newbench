@@ -1,0 +1,12 @@
+# Build Stage
+FROM alpine:latest AS builder
+WORKDIR /usr/src/app
+
+RUN apk add --no-cache clang make libc-dev
+COPY bench.cpp ./bench.cpp
+RUN clang++ bench.cpp -o bench -static -O3
+
+# Runtime Stage
+FROM scratch
+COPY --from=builder /usr/src/app/bench /bench
+CMD ["/bench"]

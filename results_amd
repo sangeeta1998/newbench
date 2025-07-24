@@ -1,0 +1,7 @@
+bench-native                          latest            ff7e02582e12   6 hours ago     8.42MB
+bench-wasm                            latest            a7cdbdd82ce4   6 hours ago     2.63MB
+
+
+Image,Average Pull Time (s)
+docker.io/sangeetakakati/newbench:wasm,2.324
+docker.io/sangeetakakati/newbench:native,2.642

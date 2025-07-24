@@ -1,0 +1,3 @@
+FROM scratch
+   COPY bench_optimized.wasm /bench.wasm
+   ENTRYPOINT ["/bench.wasm"]
