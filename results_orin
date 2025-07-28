@@ -1,0 +1,3 @@
+Image,Average Pull Time (s)
+docker.io/sangeetakakati/newbench:wasm,2.265
+docker.io/sangeetakakati/newbench:native,2.778

@@ -41,6 +41,6 @@ pull_image() {
 
 # Pull and measure
 pull_image "docker.io/sangeetakakati/newbench:wasm" "wasm"
-pull_image "docker.io/sangeetakakati/newbench:native" "linux/amd64"
+pull_image "docker.io/sangeetakakati/newbench:native" "linux/arm64"
 
 echo "Timing results have been recorded in $output_file" 
